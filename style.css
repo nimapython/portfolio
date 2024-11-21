@@ -1,0 +1,326 @@
+body{
+    background-color: rgb(0, 0, 0) !important;
+    /* background-image: url('https://img.freepik.com/premium-vector/vector-illustration-set-square-geometric-shapes-with-small-lines-texture_1028306-439.jpg?ga=GA1.1.2045767247.1729070713&semt=ais_hybrid'); */
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* new  */
+/* Animation for text fade-in */
+.fade-in {
+  animation: fadeIn 2s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* Animation for icon bounce */
+.bounce-in {
+  animation: bounceIn 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0.3); opacity: 0; }
+  50% { transform: scale(1.1); opacity: 1; }
+  70% { transform: scale(0.9); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Zoom-in effect for profile image */
+.zoom-in {
+  animation: zoomIn 1.5s ease forwards;
+  opacity: 0;
+}
+
+@keyframes zoomIn {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+/* new end */
+
+nav{
+  padding: 0;
+  margin: 0;
+    font-size: 20px;
+}
+
+
+.active-link{
+    font-size: 30px !important;
+    font-weight: bold;
+}
+.main{
+    height: 100vh;
+
+}
+
+#home {
+  width: 100%;
+  height: 80vh;
+  
+  align-items: center;
+  
+
+}
+
+
+
+.main-intro{
+    font-size: 40px;
+    color: white;
+   
+}
+
+.reveal-text {
+    margin: 0;
+    font-size: 45px;
+    line-height: 1;
+    overflow: hidden;
+    margin: 10px;
+  }
+  
+  .reveal-text span {
+    display: block;
+    transform: translateY(100%);
+    animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+  }
+  
+  /* Delay the animation for the second line */
+  .reveal-text:nth-child(2) span {
+    animation-delay: 1s;
+  }
+  
+  @keyframes reveal {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+/* gsap scrolling */
+
+.first-overlay
+ {
+  z-index: 1;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+
+section {
+  position: relative;
+  height: 100vh;
+}
+
+
+/* 
+#first-section-content {
+
+  max-height: 100vh;
+  overflow-y: auto;
+}
+ */
+ .moving-object {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 150px;
+  height: 150px;
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 50%;
+  z-index: 1; /* Ensures it stays in the background */
+}
+ 
+.profile-img{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    filter: brightness(0.7); 
+}
+.about-item {
+  margin: 20px;
+  height: 50vh; /* Adjust height as needed */
+  padding: 20px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  border: 2px solid transparent; /* Border for the glow effect */
+  position: relative; /* For pseudo-element positioning */
+  overflow: hidden; /* Prevent pseudo-element overflow */
+}
+
+.about-item:hover {
+  margin-top: 200px;
+  margin-left: 100px !important;
+  margin-right: 100px !important;
+  color: antiquewhite;
+  background-color: black;
+border-radius: 30px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 
+              0 0 30px rgba(255, 255, 255, 0.3); /* Glow effect */
+  transform: scale(1.05); /* Slight scaling */
+  transition: all 0.5s ease; /* Slightly slower transition */
+}
+
+
+
+
+.about-item * {
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.about {
+  padding: 50px;
+  background-color: white;
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  color: rgb(7, 7, 7); /* Text color */
+  scroll-behavior: smooth; /* Optional: Smooth scrolling */
+}
+/* Hide scrollbar but retain functionality */
+.about::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}
+
+
+
+/* Skills Section Styling */
+
+
+/* Testimonials Styling */
+.testimonial {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.testimonial p {
+  font-style: italic;
+  color: white;
+}
+
+.testimonial h5 {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #ccc;
+}
+
+
+/* sample scattered */
+
+
+/* Contact Section Styling */
+#contact {
+  background-color: black;
+  color: white;
+  padding: 50px 0;
+}
+
+.contact-form .form-control {
+  border-radius: 5px;
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+.contact-form .btn {
+  padding: 12px;
+  font-size: 20px;
+}
+label{
+  font-size: 20px;
+}
+
+.contact-form .btn-primary {
+  background-color: white;
+  color: black;
+}
+
+ .btn-primary:hover {
+  background-color: black;
+  color: white;
+}
+
+.contact-form .btn-danger, .contact-form .btn-success {
+  padding: 12px;
+  font-size: 20px;
+}
+
+
+
+/* responsive */
+
+/* For small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+  .main-intro {
+      font-size: 25px;
+  }
+
+  .reveal-text span {
+      font-size: 30px;
+  }
+
+  .profile-img {
+      height: 200px;
+      width: 200px;
+  }
+
+  .about-item {
+      height: auto;
+      margin-top: 20px;
+  }
+ 
+  .about-item:hover {
+    margin-top: 20px;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    color: antiquewhite;
+    background-color: black;
+  border-radius: 30px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 
+                0 0 30px rgba(255, 255, 255, 0.3); /* Glow effect */
+    transform: scale(1.05); /* Slight scaling */
+    transition: all 0.5s ease; /* Slightly slower transition */
+  }
+
+  
+}
+
+/* For medium devices (tablets, 768px to 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+  .main-intro {
+      font-size: 30px;
+  }
+
+
+  .about-item {
+      height: 40vh;
+  }
+}
+
+/* For large devices (desktops, more than 992px) */
+@media (min-width: 992px) {
+  .main-intro {
+      font-size: 40px;
+  }
+
+  .profile-img {
+      height: 400px;
+      width: 400px;
+  }
+
+  .about-item {
+      height: 50vh;
+  }
+}

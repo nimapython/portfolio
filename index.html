@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <!-- Left Aligned Portfolio Link -->
+            <a class="navbar-brand text-white active-link" href="#home">Portfolio</a>
+
+            <!-- Navbar Toggle Button for Small Screens -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Right Aligned Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container main mt-5">
+
+      <div class="row" id="home">
+          <div class=" main-intro p-5 text-start">
+              <div class="reveal-text fade-in" style="animation-delay: 0.2s;">
+                  <span>Hello, It's me</span>
+              </div>
+              <div class="reveal-text fade-in" style="font-size: 100px; font-weight: bold; animation-delay: 0.5s;">
+                  <span>Nima Nandan P N</span>
+              </div>
+              <div class="reveal-text fade-in" style="font-size: 20px; animation-delay: 0.8s;">
+                  <span class="mt-3">
+                      <!-- <a href="https://wa.me/7560894268" style="text-decoration: none;">
+                          <i class="fa-brands fa-whatsapp p-3 bounce-in" style="animation-delay: 1s; color: white;"></i>
+                      </a>
+                      <a href="mailto:nimanandan8@gmail.com">
+                          <i class="fa-solid fa-envelope bounce-in" style="animation-delay: 1.2s; color: white;"></i>
+                      </a> -->
+                      <p>Full Stack Developer</p>
+                  </span>
+              </div>
+          </div>
+          <!-- <div class="col-6 main-intro d-flex justify-content-center align-items-center">
+              <img class="profile-img zoom-in" src="Nima.jpg" style="animation-delay: 1.5s;">
+          </div> -->
+      </div>
+  </div>
+  
+  <div class="moving-object"></div>
+
+  <div class="container-fluid about">
+
+
+            <!-- About Section -->
+            <div class="row about-item" id="about">
+                <div class="col-12 col-md-6" style="font-size: 25px;">
+                    <p>About</p>
+                </div>
+                <div class="col-12 col-md-6" style="font-size: 20px; color: rgb(137, 136, 136)">
+                    <p>
+                      A passionate Full Stack Developer with one year of hands-on experience in developing high-quality web applications. Skilled in both front-end and back-end technologies, I specialize in creating responsive and interactive user experiences using HTML, CSS, Bootstrap, and JavaScript, with React.js for dynamic front-end development. On the server side, I work with Python and Django to build scalable applications and REST APIs that ensure seamless data exchange. I am dedicated to writing clean, efficient code and enjoy tackling new challenges to continually enhance my skills and deliver top-tier projects.                    </p>
+                </div>
+            </div>
+            <hr style="color: white; margin-top: 80px;">
+
+            <!-- Focus Section -->
+            <div class="row about-item" id="focus" style="margin: 0;">
+                <div class="col-12 col-md-6" style="font-size: 25px;">
+                    <p>Focus</p>
+                </div>
+                <div class="col-12 col-md-6" style="font-size: 20px; color: rgb(137, 136, 136)">
+                    <p>User-Centered Design</p>
+                    <p>Front-End Development Excellence</p>
+                    <p>Robust Back-End Architecture</p>
+                    <p>Code Quality and Optimization</p>
+                    <p>Continuous Learning and Adaptability</p>
+                </div>
+            </div>
+            <hr style="color: white; margin-top: 80px;">
+
+            <!-- Experience Section -->
+            <div class="row about-item" id="experience" style="margin: 0;">
+                <div class="col-12 col-md-6" style="font-size: 25px;">
+                    <p>Works</p>
+                </div>
+                <div class="col-12 col-md-6" style="font-size: 20px; color: rgb(137, 136, 136)">
+                    <p>Home Service website</p>
+                    <p>Anime</p>
+                    <p>Ketalput</p>
+                    <p>Car Rental System</p>
+                    <p>OpenCV Projects</p>
+                    <p>Speech to Text | Text to Speech Project</p>
+                    <p>Recipe Sharing Website</p>
+                </div>
+            </div>
+
+      
+</div>
+
+
+   
+<div class="container main mt-5">
+
+  <div class="row" id="home">
+      <div class=" p-5 text-start">
+          <!-- Contact Section -->
+<section id="contact" class="animate p-5">
+  <h2 class="text-center mb-4">Contact Me</h2>
+  
+  <!-- Contact Form -->
+  <div class="row justify-content-center">
+      <div class="col-lg-6">
+          <form action="mailto:nimanandan8@gmail.com" method="post" enctype="text/plain" class="contact-form">
+              <div class="form-group mb-3">
+                  <label for="name" class="form-label">Your Name</label>
+                  <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+              </div>
+              <div class="form-group mb-3">
+                  <label for="email" class="form-label">Your Email</label>
+                  <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+              </div>
+              <div class="form-group mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea id="message" name="message" rows="4" class="form-control" placeholder="Your message..." required></textarea>
+              </div>
+              <button type="submit" class="btn w-100">Send Message</button>
+          </form>
+      </div>
+  </div>
+  
+  <!-- Social Media Links -->
+  <div class="text-center mt-4">
+      <a href="https://wa.me/7560894268" style="text-decoration: none; color: white;" class=" m-2">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+      </a>
+      <a href="mailto:nimanandan8@gmail.com" style="text-decoration: none; color: white;" class=" m-2">
+          <i class="fa-solid fa-envelope"></i> Email
+      </a>
+      <a href="tel:+919567228642" style="text-decoration: none; color: white;" class=" m-2">
+        <i class="fa-solid fa-phone"></i> +91 9567228642
+    </a>
+  </div>
+</section>
+
+          
+      </div> 
+  </div>
+</div>
+
+
+
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+<script>
+// Adjust GSAP animations for different screen sizes
+const isMobile = window.innerWidth < 768;
+
+gsap.to(".moving-object", {
+    x: isMobile ? "300%" : "700%",
+    y: isMobile ? "400%" : "900%",
+    scale: 1.5,
+    rotation: 360,
+    duration: 20,
+    repeat: -3,
+    ease: "none",
+    delay: 1,
+});
+
+
+gsap.from("#contact", {
+    opacity: 0,
+    y: 50,
+    duration: 1.5,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: "#contact",
+        start: "top 80%",
+    }
+});
+
+
+     // GSAP Animation for Background Moving Object
+     gsap.to(".moving-object", {
+        x: "700%",
+        y: "900%",
+        scale: 1.5,
+        rotation: 360,
+        duration: 20,
+        repeat: -3,
+        ease: "none",
+        delay: 1,
+    });
+
+// skills
+
+gsap.registerPlugin(ScrollTrigger);
+
+// Bounce-in effect on initial load
+gsap.from(".skill-item", {
+    opacity: 6,
+    y: 50,
+    rotate: 15,
+    duration: 1.2,
+    stagger: 0.2,
+    ease: "bounce.out",
+    scrollTrigger: {
+        trigger: ".skills-list",
+        start: "top 80%",
+    },
+});
+
+// Floating animation for continuous movement
+gsap.to(".skill-item", {
+    y: "+=10",
+    rotate: "+=5",
+    duration: 2,
+    yoyo: true,
+    repeat: -1,
+    ease: "sine.inOut",
+    stagger: {
+        amount: 1,
+        from: "center",
+    },
+});
+
+
+
+  
+  // Overlays animation
+gsap.to(".first-overlay", {
+  opacity: 1,
+  scrollTrigger: {
+    trigger: ".first-overlay",
+    start: "top top",
+    end: "bottom top",
+    scrub: true
+  }
+});
+
+
+
+// Content Animation
+gsap.to("#first-section-content", {
+  opacity: 0,
+  // y: "+=450",
+  scrollTrigger: {
+    trigger: ".first-overlay",
+    start: "top top",
+    end: "bottom center",
+    scrub: true
+  }
+});
+
+
+
+
+
+
+
+
+const selector = document.getElementById("second-section-content");
+
+
+
+
+
+
+// Parallax
+gsap.utils.toArray("section").forEach((section, i) => {
+  section.bg = section.querySelector(".bg");
+  if (i) {
+    section.bg.style.backgroundPosition = `50% ${innerHeight / 2}px`;
+
+    gsap.to(section.bg, {
+      backgroundPosition: `50% ${-innerHeight / 2}px`,
+      ease: "none",
+      scrollTrigger: {
+        trigger: section,
+        scrub: true
+      }
+    });
+  } else {
+    section.bg.style.backgroundPosition = "50% 0px";
+
+    gsap.to(section.bg, {
+      backgroundPosition: `50% ${-innerHeight / 2}px`,
+      ease: "none",
+      scrollTrigger: {
+        trigger: section,
+        start: "top top",
+        end: "bottom top",
+        scrub: true
+      }
+    });
+  }
+});
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to("#first-section-content", {
+  scrollTrigger: {
+    trigger: ".about",       // Triggering on the ".about" container
+    start: "top top",        // Start when ".about" reaches the top of the viewport
+    end: "bottom bottom",    // End when the bottom of ".about" reaches the bottom of the viewport
+    scrub: true,             // Smoothly scrub the scroll
+    pin: true,               // Pin the ".about" container to keep it fixed in place
+  }
+});
+
+
+  // Skills animation
+  gsap.fromTo(".skill-item", { scale: 0, opacity: 0 }, {
+            scale: 1, opacity: 1, duration: 0.6, stagger: 0.2,
+            scrollTrigger: { trigger: "#skills", start: "top 75%" }
+        });
+
+        // Navbar animation
+        gsap.from("nav", { y: -100, opacity: 0, duration: 1 });
+
+   </script> 
+</body>
+</html>
