@@ -277,11 +277,11 @@ label{
   }
 
   .about-item {
-      height: auto;
-      margin-top: 20px;
+    padding: 15px;
+    text-align: center;
   }
- 
   .about-item:hover {
+    cursor: pointer;
     margin-top: 20px;
     margin-left: 10px !important;
     margin-right: 10px !important;
