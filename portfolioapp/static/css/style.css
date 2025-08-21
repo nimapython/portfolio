@@ -1,0 +1,41 @@
+.project-card {
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  background-color: #fff;
+  color: #333;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    background-color: #333; 
+  color: #fff;
+}
+
+.project-card:hover .card-title {
+  color: #fff;
+}
+
+.card-body {
+  padding: 30px 20px;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Footer looks clean and doesn’t overlap content */
+footer {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 40px;
+  border-top: 1px solid #e5e5e5;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
